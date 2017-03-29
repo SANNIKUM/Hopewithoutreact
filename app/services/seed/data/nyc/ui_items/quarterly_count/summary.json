@@ -1,0 +1,110 @@
+{
+  "nycQuarterlyCountSummary": {
+    "uiItemProperties": {
+      "uiItemType": "summaryPage",
+      "headerBarTitle": "Summary"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountSummaryFormField_1": {
+        "formField": "route",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField"
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_2": {
+        "formField": "gender",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_3": {
+        "formField": "position",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_4": {
+        "formField": "age",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_5": {
+        "formField": "race",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_6": {
+        "formField": "panhandling",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_7": {
+        "formField": "canning",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_8": {
+        "formField": "wheelchair",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_9": {
+        "formField": "bedding",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_10": {
+        "formField": "disheveled",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryFormField_11": {
+        "formField": "luggage",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "nycQuarterlyCountSummaryCloseButton": {
+        "uiItemProperties": {
+          "uiItemType": "cancelButton",
+          "nextAction": "changeActiveUiItemByName",
+          "nextUiItemName": "nycQuarterlyCountHome",
+          "buttonText": "Close"
+        }
+      },
+      "nycQuarterlyCountSummaryNewSurveyButton": {
+        "uiItemProperties": {
+          "uiItemType": "skipButton",
+          "nextAction": "changeActiveUiItemByName",
+          "nextUiItemName": "nycQuarterlyCountSurvey",
+          "buttonText": "New Survey"
+        }
+      }
+    }
+  }
+}

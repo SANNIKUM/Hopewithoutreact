@@ -1,0 +1,98 @@
+{
+  "nycQuarterlyCountVehicleSurvey": {
+    "parentUiItems": ["nycQuarterlyCountSurvey"],
+    "uiItemProperties": {
+      "headerBarTitle": "Vehicle",
+      "uiItemType": "sequenceFormElement",
+      "formFieldSectionType": "set",
+      "rank": 2,
+      "formFieldDependencies": {
+        "_onAssignmentProperty": {
+          "route": "type___Street"
+        }
+      },
+      "nextButtonText": "Submit Survey",
+      "isEndOfSurvey": "true",
+      "alertUser": "true",
+      "alertTitle": "Thank you!",
+      "alertMessage": "Your survey was successfully submitted. Do you want to start a new count?"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountSurveyMap": {
+        "uiItemProperties": {
+          "rank": 2,
+          "formFieldSectionType": "map",
+          "label": "Location",
+          "initialCoordinates": "{\"latitude\":40.705342,\"longitude\":-74.012035}",
+          "useMapLocation": "useMapLocation"
+        },
+        "childUiItems": {
+          "latitude": {
+            "formField": "latitude",
+            "fieldType": "string",
+            "uiItemProperties": {}
+          },
+          "longitude": {
+            "formField": "longitude",
+            "fieldType": "string",
+            "uiItemProperties": {}
+          }
+        }
+      },
+      "nycQuarterlyCountSurveyUseMapLocationButton": {
+        "formField": "useMapLocation",
+        "fieldType": "boolean",
+        "uiItemProperties": {
+          "rank": 2.1,
+          "text": "Use Map Location",
+          "defaultValue": "false",
+          "formFieldSectionType": "boolean"
+        }
+      },
+      "nycQuarterlyCountSurveyBuildingNumber": {
+        "formField": "buildingNumber",
+        "fieldType": "text",
+        "fieldLabel": "Building No.",
+        "uiItemProperties": {
+          "inputType": "string",
+          "rank": 2.2,
+          "formFieldSectionType": "textInput",
+          "placeholder": "Building No. / Address?"
+        }
+      },
+      "nycQuarterlyCountSurveyStreetAddress": {
+        "formField": "streetAddress",
+        "fieldType": "text",
+        "fieldLabel": "Street Address",
+        "uiItemProperties": {
+          "inputType": "string",
+          "rank": 2.3,
+          "formFieldSectionType": "textInput",
+          "placeholder": "Street?"
+        }
+      },
+      "nycQuarterlyCountSurveyCrossStreet": {
+        "formField": "crossStreet",
+        "fieldType": "text",
+        "fieldLabel": "Cross Street",
+        "uiItemProperties": {
+          "inputType": "string",
+          "rank": 2.4,
+          "formFieldSectionType": "textInput",
+          "placeholder": "Cross Street?"
+        }
+      },
+      "nycQuarterlyCountSurveyAtOrBetween": {
+        "formField": "atOrBetween",
+        "fieldType": "text",
+        "fieldLabel": "At or Between",
+        "uiItemProperties": {
+          "inputType": "string",
+          "rank": 2.5,
+          "formFieldSectionType": "textInput",
+          "placeholder": "At or between?"
+        }
+      }
+    }
+  }
+}

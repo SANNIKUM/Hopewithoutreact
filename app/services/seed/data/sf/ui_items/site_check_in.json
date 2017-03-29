@@ -1,0 +1,29 @@
+{
+  "sfSiteCheckIn": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonText": "Check In",
+      "uiItemAfterSubmit": "sfHome",
+      "bootstrappedAssignments": {
+        "formType": "siteCheckIn",
+        "formTypeCategory": "checkIn",
+        "municipality": "sf"
+      }
+    },
+    "childUiItems": {
+      "sfSiteCheckInSelect": {
+        "isFormField": true,
+        "fieldType": "assignment",
+        "formField": "site",
+        "uiItemProperties": {
+          "uiItemType": "select",
+          "inputType": "option",
+          "answerFormat": "multipleChoice",
+          "formFieldSectionType": "select",
+          "prompt": "Select your site",
+          "isRequired": "true"
+        }
+      }
+    }
+  }
+}

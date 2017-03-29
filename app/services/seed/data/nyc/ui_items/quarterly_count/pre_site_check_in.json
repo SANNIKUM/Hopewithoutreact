@@ -1,0 +1,36 @@
+{
+  "nycQuarterlyCountPreSiteCheckIn": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false",
+      "headerBarTitle": "Welcome"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountPreSiteCheckInIcon": {
+        "uiItemProperties": {
+          "formFieldSectionType": "icon",
+          "rank": 1,
+          "iconType": "FontAwesome",
+          "iconName": "map-o"
+        }
+      },
+      "nycQuarterlyCountPreSiteCheckInDialogue": {
+        "uiItemProperties": {
+          "formFieldSectionType": "dialogue",
+          "spokenQuestionOrGuess": "none",
+          "rank": 2,
+          "prompt": "Welcome,\n\nAre you at the correct location and ready to check in?"
+        }
+      },
+      "nycQuarterlyCountPreSiteCheckInSubmitButton": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycQuarterlyCountSiteCheckIn",
+          "buttonText": "Yes, I want to check in",
+          "buttonColor": "#01acac"
+        }
+      }
+    }
+  }
+}

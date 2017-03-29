@@ -1,0 +1,86 @@
+{
+  "sfHome": {
+    "uiItemProperties": {
+      "uiItemType": "menu"
+    },
+    "childUiItems": {
+      "sfUserDisplay": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "user"
+        }
+      },
+      "sfSiteDisplay": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "site"
+        }
+      },
+      "sfTeamDisplay": {
+        "uiItemProperties": {
+          "rank": 3,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "team"
+        }
+      },
+      "sfStartSurvey": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "changeActiveUiItemButton",
+          "newActiveUiItem": "sfRouteCheckIn",
+          "buttonText": "Route Check In",
+          "buttonColor": "#01acac"
+        }
+      },
+      "sfSiteCheckOutButton": {
+        "uiItemProperties": {
+          "rank": 4,
+          "uiItemType": "instantFormSubmitButton",
+          "uiItemAfterSubmit": "sfAfterSiteCheckOutThankYou",
+          "buttonText": "End of Count Check Out",
+          "bootstrappedAssignments": {
+            "formType": [
+              "routeCheckOut"
+            ],
+            "formTypeCategory": "checkOut"
+          }
+        }
+      },
+      "sfRefreshButton": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "linkToFormSubmit",
+          "formUiItemName": "sfSiteCheckIn",
+          "buttonText": "Refresh",
+          "buttonColor": "#f7b048"
+        }
+      }
+    }
+  },
+
+  "sfAfterSiteCheckOutThankYou": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false"
+    },
+    "childUiItems": {
+      "sfAfterSiteCheckOutThankYouDialogue": {
+        "uiItemProperties": {
+          "formFieldSectionType": "dialogue",
+          "spokenQuestionOrGuess": "guess",
+          "prompt": "Thank you for volunteering!"
+        }
+      },
+      "sfAfterSiteCheckOutThankYouReturnHome": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "sfHome",
+          "buttonText": "Home"
+        }
+      }
+    }
+  }
+}

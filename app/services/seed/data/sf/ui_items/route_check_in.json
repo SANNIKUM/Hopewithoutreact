@@ -1,0 +1,46 @@
+{
+  "sfRouteCheckIn": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false",
+      "bootstrappedAssignments": {
+        "formType": "routeCheckIn",
+        "formTypeCategory": "checkIn",
+        "municipality": "sf"
+      }
+    },
+    "childUiItems": {
+      "sfRouteCheckInCancelButton": {
+        "uiItemProperties": {
+          "uiItemType": "skipButton",
+          "nextAction": "changeActiveUiItemByName",
+          "nextUiItemName": "sfHome",
+          "buttonText": "Cancel"
+        }
+      },
+      "sfRouteCheckInSelect": {
+        "isFormField": true,
+        "fieldType": "assignment",
+        "formField": "route",
+        "uiItemProperties": {
+          "uiItemType": "select",
+          "inputType": "option",
+          "answerFormat": "multipleChoice",
+          "formFieldSectionType": "routeSelect",
+          "prompt": "Select your route",
+          "includeAllIfNoneAssigned": "false"
+        }
+      },
+      "sfRouteCheckInButton": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "changeActiveUiItemButton",
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "sfSurvey",
+          "buttonText": "Start Survey",
+          "buttonColor": "#01acac"
+        }
+      }
+    }
+  }
+}

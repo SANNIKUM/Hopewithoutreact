@@ -1,0 +1,102 @@
+{
+  "nycQuarterlyCountHome": {
+    "uiItemProperties": {
+      "uiItemType": "menu",
+      "headerBarTitle": "HOME"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountUserDisplay": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "user"
+        }
+      },
+      "nycQuarterlyCountSiteDisplay": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "site"
+        }
+      },
+      "nycQuarterlyCountTeamDisplay": {
+        "uiItemProperties": {
+          "rank": 3,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "team"
+        }
+      },
+      "nycQuarterlyCountStartSurveyButton": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycQuarterlyCountSurvey",
+          "buttonText": "Start Survey",
+          "buttonColor": "#01acac"
+        }
+      },
+      "nycQuarterlyCountRefreshButton": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "instantFormSubmitButton",
+          "uiItemAfterSubmit": "nycQuarterlyCountHome",
+          "buttonText": "Refresh",
+          "buttonColor": "#f7b048",
+          "alertAfterSubmit": "Refresh Success",
+          "bootstrappedAssignments": {
+            "formType": "homeRefresh",
+            "formTypeCategory": "refresh",
+            "municipality": "nyc",
+            "countInstance": "nycQuarterlyCountApril2017",
+            "countType": "quarterlyCount"
+          }
+        }
+      },
+      "nycQuarterlyCountSummaryButton": {
+        "uiItemProperties": {
+          "rank": 3,
+          "uiItemType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycQuarterlyCountSummary",
+          "buttonText": "Summary"
+        }
+      },
+      "nycQuarterlyCountSiteCheckOutButton": {
+        "uiItemProperties": {
+          "rank": 4,
+          "uiItemType": "instantFormSubmitButton",
+          "uiItemAfterSubmit": "nycQuarterlyCountAfterSiteCheckOutThankYou",
+          "buttonText": "End of Count Check Out",
+          "bootstrappedAssignments": {
+            "formType": "routeBlanketCheckOut",
+            "formTypeCategory": "blanketCheckOut",
+            "municipality": "nyc",
+            "countInstance": "nycQuarterlyCountApril2017",
+            "countType": "quarterlyCount"
+          },
+          "alertUser": "true",
+          "alertTitle": "End of Count Check Out",
+          "alertMessage": "Are you sure you want to check out?"
+        },
+        "childUiItems": {
+          "nycQuarterlyCountSiteCheckOutAlertButton1": {
+            "uiItemProperties": {
+              "uiItemType": "alertButton",
+              "rank": 1,
+              "text": "Cancel",
+              "style": "cancel"
+            }
+          },
+          "nycQuarterlyCountSiteCheckOutAlertButton2": {
+            "uiItemProperties": {
+              "uiItemType": "alertButton",
+              "rank": 2,
+              "text": "Check Out",
+              "style": "destructive",
+              "nextAction": "validFormSubmitAttempt"
+            }
+          }
+        }
+      }
+    }
+  }
+}

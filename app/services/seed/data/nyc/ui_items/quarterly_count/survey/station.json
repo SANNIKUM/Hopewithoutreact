@@ -1,0 +1,63 @@
+{
+  "nycQuarterlyCountStationSurvey": {
+    "parentUiItems": ["nycQuarterlyCountSurvey"],
+    "uiItemProperties": {
+      "headerBarTitle": "Station",
+      "uiItemType": "sequenceFormElement",
+      "formFieldSectionType": "set",
+      "rank": 3,
+      "formFieldDependencies": {
+        "_onAssignmentProperty": {
+          "route": "type___Subway"
+        }
+      },
+      "nextButtonText": "Submit Survey",
+      "isEndOfSurvey": "true",
+      "alertUser": "true",
+      "alertTitle": "Thank you!",
+      "alertMessage": "Your survey was successfully submitted. Do you want to start a new count?"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountSurveyDirection": {
+        "formField": "direction",
+        "fieldType": "option",
+        "fieldLabel": "Direction",
+        "options": [
+          "Uptown",
+          "Downtown",
+          "Manhattan-bound",
+          "Queens-bound",
+          "Unknown"
+        ],
+        "uiItemProperties": {
+          "inputType": "option",
+          "rank": 2,
+          "uiItemType": "optionField",
+          "formFieldSectionType": "select",
+          "numOptionsInRow": 2
+        }
+      },
+      "nycQuarterlyCountSurveyLocationInStation": {
+        "formField": "locationInStation",
+        "fieldType": "option",
+        "fieldLabel": "Location in Station",
+        "options": [
+          "Entrance",
+          "Stairway",
+          "Elevator",
+          "Turnstyle",
+          "Hall",
+          "Platform",
+          "Mezzanine"
+        ],
+        "uiItemProperties": {
+          "inputType": "option",
+          "rank": 2.1,
+          "uiItemType": "optionField",
+          "formFieldSectionType": "select",
+          "numOptionsInRow": 2
+        }
+      }
+    }
+  }
+}

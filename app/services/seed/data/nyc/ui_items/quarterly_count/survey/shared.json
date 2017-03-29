@@ -1,0 +1,256 @@
+{
+  "nycQuarterlyCountSurveySubmissionAlertButton1": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "uiItemProperties": {
+      "uiItemType": "alertButton",
+      "rank": 1,
+      "text": "No"
+    }
+  },
+  "nycQuarterlyCountSurveySubmissionAlertButton2": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "uiItemProperties": {
+      "uiItemType": "alertButton",
+      "rank": 2,
+      "text": "Yes",
+      "nextAction": "changeActiveUiItemByName",
+      "nextUiItemName": "nycQuarterlyCountSurvey"
+    }
+  },
+  "nycQuarterlyCountSurveyKnownClient": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "knownClient",
+    "fieldType": "boolean",
+    "fieldLabel": "Known Client",
+    "uiItemProperties": {
+      "rank": 1,
+      "label": "Known Client",
+      "text": "Yes",
+      "defaultValue": "false",
+      "formFieldSectionType": "boolean"
+    }
+  },
+  "nycQuarterlyCountSurveyPosition": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "position",
+    "fieldType": "option",
+    "fieldLabel": "Position",
+    "options": [
+      {
+        "label": "Sitting",
+        "value": "sitting"
+      },
+      {
+        "label": "Standing",
+        "value": "standing"
+      },
+      {
+        "label": "Outstretched",
+        "value": "outstretched"
+      }
+    ],
+    "uiItemProperties": {
+      "rank": 3,
+      "prompt": "Position",
+      "answerFormat": "multipleChoice",
+      "inputType": "option",
+      "uiItemType": "optionField",
+      "formFieldSectionType": "iconSelect",
+      "numOptionsInRow": "3",
+      "isRequired": "true"
+    }
+  },
+  "nycQuarterlyCountSurveyGender": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "gender",
+    "fieldType": "option",
+    "fieldLabel": "Gender",
+    "options": [
+      {
+        "label": "Male",
+        "value": "male"
+      },
+      {
+        "label": "Female",
+        "value": "female"
+      },
+      {
+        "label": "Unknown",
+        "value": "unknown"
+      }
+    ],
+    "uiItemProperties": {
+      "inputType": "option",
+      "rank": 4,
+      "prompt": "Gender",
+      "answerFormat": "multipleChoice",
+      "uiItemType": "optionField",
+      "formFieldSectionType": "iconSelect",
+      "numOptionsInRow": "3",
+      "isRequired": "true"
+    }
+  },
+  "nycQuarterlyCountSurveyObservations": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "uiItemProperties": {
+      "rank": 5,
+      "uiItemType": "multiSelect",
+      "formFieldSectionType": "multiSelect",
+      "label": "Additional Observations (choose all that apply)",
+      "numOptionsInRow": "3"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountSurveyBedding": {
+        "isForField": true,
+        "formField": "bedding",
+        "fieldType": "boolean",
+        "fieldLabel": "Bedding",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "bedding"
+        }
+      },
+      "nycQuarterlyCountSurveyWheelchair": {
+        "isForField": true,
+        "formField": "wheelchair",
+        "fieldType": "boolean",
+        "fieldLabel": "Wheelchair/Walker",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "walker"
+        }
+      },
+      "nycQuarterlyCountSurveyCanning": {
+        "isForField": true,
+        "formField": "canning",
+        "fieldType": "boolean",
+        "fieldLabel": "Canning",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "canning"
+        }
+      },
+      "nycQuarterlyCountSurveyLuggage": {
+        "isForField": true,
+        "formField": "luggage",
+        "fieldType": "boolean",
+        "fieldLabel": "Luggage",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "luggage"
+        }
+      },
+      "nycQuarterlyCountSurveyPanhandling": {
+        "isForField": true,
+        "formField": "panhandling",
+        "fieldType": "boolean",
+        "fieldLabel": "Panhandling",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "panhandling"
+        }
+      },
+      "nycQuarterlyCountSurveyDisheveled": {
+        "isForField": true,
+        "formField": "disheveled",
+        "fieldType": "boolean",
+        "fieldLabel": "Disheveled",
+        "uiItemProperties": {
+          "inputType": "boolean",
+          "uiItemType": "multiSelectIcon",
+          "icon": "disheveled"
+        }
+      }
+    }
+  },
+  "nycQuarterlyCountSurveyRace": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "race",
+    "fieldType": "option",
+    "fieldLabel": "Race",
+    "options": [
+      "Asian",
+      "Black",
+      "Latino",
+      "Mixed",
+      "White",
+      "Unknown"
+    ],
+    "uiItemProperties": {
+      "inputType": "option",
+      "rank": 6,
+      "uiItemType": "optionField",
+      "formFieldSectionType": "select",
+      "numOptionsInRow": "3",
+      "isRequired": "true"
+    }
+  },
+  "nycQuarterlyCountSurveyAge": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "age",
+    "fieldType": "option",
+    "fieldLabel": "Age",
+    "options": [
+      "Teen",
+      "20 - 30's",
+      "40 - 50's",
+      "60 - 70's",
+      "80+",
+      "Unknown"
+    ],
+    "uiItemProperties": {
+      "inputType": "option",
+      "rank": 7,
+      "uiItemType": "optionField",
+      "formFieldSectionType": "select",
+      "numOptionsInRow": "3",
+      "isRequired": "true"
+    }
+  },
+  "nycQuarterlyCountSurveyNotes": {
+    "parentUiItems": [
+      "nycQuarterlyCountVehicleSurvey",
+      "nycQuarterlyCountStationSurvey"
+    ],
+    "formField": "notes",
+    "fieldType": "string",
+    "fieldLabel": "Notes",
+    "uiItemProperties": {
+      "inputType": "string",
+      "rank": 8,
+      "uiItemType": "multilineTextInput",
+      "formFieldSectionType": "textInput",
+      "answerFormat": "multiline",
+      "placeholder": "Notes"
+    }
+  }
+}

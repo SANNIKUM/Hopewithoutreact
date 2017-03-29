@@ -1,0 +1,26 @@
+{
+  "nycQuarterlyCountAfterSiteCheckOutThankYou": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false",
+      "headerBarTitle": "Thank You"
+    },
+    "childUiItems": {
+      "nycQuarterlyCountAfterSiteCheckOutThankYouDialogue": {
+        "uiItemProperties": {
+          "formFieldSectionType": "dialogue",
+          "spokenQuestionOrGuess": "guess",
+          "prompt": "Thank you for volunteering!"
+        }
+      },
+      "nycQuarterlyCountAfterSiteCheckOutThankYouReturnHome": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycQuarterlyCountHome",
+          "buttonText": "Home"
+        }
+      }
+    }
+  }
+}

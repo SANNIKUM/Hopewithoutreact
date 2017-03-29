@@ -1,0 +1,36 @@
+{
+  "nycAnnualCountPreSiteCheckIn": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false",
+      "headerBarTitle": "HOPE 2017"
+    },
+    "childUiItems": {
+      "nycAnnualCountPreSiteCheckInIcon": {
+        "uiItemProperties": {
+          "formFieldSectionType": "icon",
+          "rank": 1,
+          "iconType": "FontAwesome",
+          "iconName": "map-o"
+        }
+      },
+      "nycAnnualCountPreSiteCheckInDialogue": {
+        "uiItemProperties": {
+          "formFieldSectionType": "dialogue",
+          "spokenQuestionOrGuess": "none",
+          "rank": 2,
+          "prompt": "Welcome,\n\nAre you at the correct location and ready to check in?"
+        }
+      },
+      "nycAnnualCountPreSiteCheckInSubmitButton": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycAnnualCountSiteCheckIn",
+          "buttonText": "Yes, I want to check in",
+          "buttonColor": "#01acac"
+        }
+      }
+    }
+  }
+}

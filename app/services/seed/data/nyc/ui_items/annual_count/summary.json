@@ -1,0 +1,68 @@
+{
+  "nycAnnualCountSummary": {
+    "uiItemProperties": {
+      "uiItemType": "summaryPage",
+      "headerBarTitle": "Summary"
+    },
+    "childUiItems": {
+      "hopeSummaryFormField_1": {
+        "formField": "decoyCode",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true,
+          "sectionIndividual": true
+        }
+      },
+      "hopeSummaryFormField_2": {
+        "formField": "seemsHomeless",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionTotal": true
+        }
+      },
+      "hopeSummaryFormField_3": {
+        "formField": "age?",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionIndividual": true
+        }
+      },
+      "hopeSummaryFormField_4": {
+        "formField": "sex",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionIndividual": true
+        }
+      },
+      "hopeSummaryFormField_5": {
+        "formField": "race",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField",
+          "sectionIndividual": true
+        }
+      },
+      "hopeSummaryFormField_6": {
+        "formField": "route",
+        "uiItemProperties": {
+          "uiItemType": "associatedFormField"
+        }
+      },
+      "hopeSummaryCloseButton": {
+        "uiItemProperties": {
+          "uiItemType": "cancelButton",
+          "nextAction": "changeActiveUiItemByName",
+          "nextUiItemName": "nycAnnualCountHome",
+          "buttonText": "Close"
+        }
+      },
+      "hopeSummaryNewSurveyButton": {
+        "uiItemProperties": {
+          "uiItemType": "skipButton",
+          "nextAction": "changeActiveUiItemByName",
+          "nextUiItemName": "nycAnnualCountSurvey",
+          "buttonText": "New Survey"
+        }
+      }
+    }
+  }
+}

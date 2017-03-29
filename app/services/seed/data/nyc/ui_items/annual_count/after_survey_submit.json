@@ -1,0 +1,44 @@
+{
+  "nycAnnualCountAfterSurveySubmit": {
+    "uiItemProperties": {
+      "uiItemType": "singlePageForm",
+      "submitButtonVisible": "false",
+      "headerBarTitle": "HOPE 2017"
+    },
+    "childUiItems": {
+      "isPersonAtRisk": {
+        "uiItemProperties": {
+          "formFieldSectionType": "dialogue",
+          "spokenQuestionOrGuess": "guess",
+          "prompt": "If this person is homeless and awake, ask if they want to go to a shelter. If this person is a risk to themself, call 911 first, then call your district captain."
+        }
+      },
+      "call911Button": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "makeCallButton",
+          "numberToCall": "911",
+          "buttonText": "Call 911",
+          "buttonColor": "#ff5c57"
+        }
+      },
+      "startNewHopeAnnualSurveyButton": {
+        "uiItemProperties": {
+          "rank": 1,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycAnnualCountSurvey",
+          "buttonText": "Start New Survey",
+          "buttonColor": "#01acac"
+        }
+      },
+      "returnToHopeHomeButton": {
+        "uiItemProperties": {
+          "rank": 2,
+          "buttonType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycAnnualCountHome",
+          "buttonText": "Return to Home"
+        }
+      }
+    }
+  }
+}

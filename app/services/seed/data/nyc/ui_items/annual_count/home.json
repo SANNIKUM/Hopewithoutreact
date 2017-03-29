@@ -1,0 +1,99 @@
+{
+  "nycAnnualCountHome": {
+    "uiItemProperties": {
+      "uiItemType": "menu",
+      "headerBarTitle": "HOPE"
+    },
+    "childUiItems": {
+      "hopeUserDisplay": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "user"
+        }
+      },
+      "hopeSiteDisplay": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "site"
+        }
+      },
+      "hopeTeamDisplay": {
+        "uiItemProperties": {
+          "rank": 3,
+          "uiItemType": "assignmentDisplay",
+          "assignmentType": "team"
+        }
+      },
+      "startSurvey": {
+        "uiItemProperties": {
+          "rank": 1,
+          "uiItemType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycAnnualCountSurvey",
+          "buttonText": "Start Survey",
+          "buttonColor": "#01acac"
+        }
+      },
+      "siteCheckOutButton": {
+        "uiItemProperties": {
+          "rank": 4,
+          "uiItemType": "instantFormSubmitButton",
+          "uiItemAfterSubmit": "nycAnnualCountAfterSiteCheckOutThankYou",
+          "buttonText": "End of Count Check Out",
+          "bootstrappedAssignments": {
+            "formType": "routeBlanketCheckOut",
+            "formTypeCategory": "blanketCheckOut",
+            "countInstance": "nycAnnualCountFebruary2017",
+            "countType": "annualCount"
+          },
+          "alertUser": "true",
+          "alertTitle": "End of Count Check Out",
+          "alertMessage": "Are you sure you want to check out?"
+        },
+        "childUiItems": {
+          "siteCheckOutAlertButton1": {
+            "uiItemProperties": {
+              "rank": 1,
+              "text": "Cancel",
+              "style": "cancel"
+            }
+          },
+          "siteCheckOutAlertButton2": {
+            "uiItemProperties": {
+              "rank": 2,
+              "text": "Check Out",
+              "style": "destructive",
+              "nextAction": "validFormSubmitAttempt"
+            }
+          }
+        }
+      },
+      "summaryPageButton": {
+        "uiItemProperties": {
+          "rank": 3,
+          "uiItemType": "changeActiveUiItemButton",
+          "newActiveUiItem": "nycAnnualCountSummary",
+          "buttonText": "Summary"
+        }
+      },
+      "refreshButton": {
+        "uiItemProperties": {
+          "rank": 2,
+          "uiItemType": "instantFormSubmitButton",
+          "uiItemAfterSubmit": "nycAnnualCountHome",
+          "buttonText": "Refresh",
+          "buttonColor": "#f7b048",
+          "alertAfterSubmit": "Refresh Success",
+          "bootstrappedAssignments": {
+            "formType": "homeRefresh",
+            "formTypeCategory": "refresh",
+            "municipality": "nyc",
+            "countInstance": "nycAnnualCountFebruary2017",
+            "countType": "annualCount"
+          }
+        }
+      }
+    }
+  }
+}
