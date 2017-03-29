@@ -73,4 +73,4 @@ gem 'will_paginate'
 
 #gem 'unicorn'
 
-ruby "2.3.3"
+ruby "2.3.1"
